@@ -1,8 +1,8 @@
 import utils
 
 numbers = [3, 6, 2, 8, 4, 10]
-max = utils.find_max(numbers)
-print(f"Max value: {max}")
+maximum = utils.find_max(numbers)
+print(f"Max value: {maximum}")
 
 # --------------------------------------
 names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
