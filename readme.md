@@ -24,8 +24,8 @@ py manage.py migrate
 ```
 py manage.py createsuperuser
 ```
-- go to http://127.0.0.1:8000/admin/products/product/
-- add new products (manually or using export for [Products.csv](Products.csv))
+- Go to http://127.0.0.1:8000/admin/products/product/
+- Add new products (manually or using export for [Products.csv](Products.csv))
 - Visit http://127.0.0.1:8000/products/
 
 ---  
@@ -39,4 +39,4 @@ django-admin startproject pyshop .
 ```
 py manage.py startapp products
 ```
-![](screenshot.jpg)
+![screenshot](screenshot.JPG)
