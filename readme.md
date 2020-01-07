@@ -1,12 +1,42 @@
+## Simple Django Project
+created by the tutorial:  
+[Python Tutorial for Beginners [Full Course] Learn Python for Web Development](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
 
-[Python Package Index](https://pypi.org/)
-
-
-###### Web
-
-[Flask 1.1.1](https://pypi.org/project/Flask/)
+###### Steps to launch the app  
+- Install Django
 ```
-pip install Flask
+pip install django
 ```
+- Install django-import-export
+```
+pip install django-import-export
+```
+- Run the app
+```
+py manage.py runserver
+```
+- Create db structure
+```
+py manage.py makemigrations
+py manage.py migrate
+```
+- Create user for admin panel
+```
+py manage.py createsuperuser
+```
+- go to http://127.0.0.1:8000/admin/products/product/
+- add new products (manually or using export for [Products.csv](Products.csv))
+- Visit http://127.0.0.1:8000/products/
 
-[Django](https://www.djangoproject.com/)
+---  
+###### Other useful info
+
+* Create a Django project
+```
+django-admin startproject pyshop .
+```
+* Create an app
+```
+py manage.py startapp products
+```
+![](screenshot.jpg)

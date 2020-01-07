@@ -1,0 +1,4 @@
+id,name,price,stock,image_url
+3,Banana,0.99,20,https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg
+2,Strawberry,2.99,30,https://upload.wikimedia.org/wikipedia/commons/5/55/Fragaria_Fruit_Close-up.jpg
+1,Orange,1.99,50,https://upload.wikimedia.org/wikipedia/commons/7/7b/Orange-Whole-%26-Split.jpg
