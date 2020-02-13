@@ -15,3 +15,9 @@ print(ages)
 
 squares = [x ** 2 for x in range(10)]
 print(squares)
+
+ages = [
+    {'name': 'Jack' + str(i), 'surname': f'Black {i}', 'age': random.randint(0, 100)}
+    for i in range(20)
+]
+print(ages)
