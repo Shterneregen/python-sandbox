@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -10,7 +12,10 @@ def hello():
 
 @app.route("/status")
 def status():
-    return {'status': 'ok'}
+    return {
+        'status': True,
+        'time': datetime.now().strftime('%Y/%m/%d %H:%M:%S')
+    }
 
 
 app.run()
