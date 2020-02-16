@@ -6,7 +6,7 @@ import requests
 last_message_time = 0
 while True:
     response = requests.get(
-        'http://127.0.0.1:5000/history?11223423.1332',
+        'http://127.0.0.1:5000/history?',
         params={'after': last_message_time}
     )
     data = response.json()
