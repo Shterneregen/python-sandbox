@@ -1,7 +1,7 @@
 import time
 from datetime import datetime
 
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 messages = [
@@ -61,13 +61,17 @@ def send():
     if username in users:
         real_password = users[username]
         if real_password != password:
-            return {'ok': False}
+            print('Wrong psw')
+            return jsonify({'ok': False})
     else:
+        print('New user')
         users[username] = password
 
     new_message = {'username': username, 'text': text, 'time': time.time()}
     messages.append(new_message)
-    return {'ok', True}
+    print('ok')
+    return jsonify({'ok': True})
 
 
-app.run()
+if __name__ == '__main__':
+    app.run(debug=False)
